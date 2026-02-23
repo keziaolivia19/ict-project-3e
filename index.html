@@ -2,61 +2,111 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Saya</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ffd6e8, #d6f0ff);
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff69b4;
+        }
+
+        h2 {
+            color: #4da6ff;
+            border-bottom: 2px solid #ffd6e8;
+            padding-bottom: 5px;
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #ffd6e8;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #fce4ec;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .skill li {
+            background-color: #e3f2fd;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
 
-    <header class="header">
-        <h1>Portofolio</h1>
-        <p>Profil Singkat Saya</p>
-    </header>
+<div class="container">
+    <div class="profile">
+        <h1>Portofolio Saya</h1>
+        <img src="https://via.placeholder.com/120" alt="Foto Profil">
+    </div>
 
-    <main class="container">
+    <section>
+        <h2>Biodata</h2>
+        <ul>
+            <li><strong>Nama:</strong> Sandi</li>
+            <li><strong>Tempat, Tanggal Lahir:</strong> Jakarta, 10 Januari 2000</li>
+            <li><strong>Email:</strong> sandi@email.com</li>
+        </ul>
+    </section>
 
-        <!-- FOTO & BIODATA -->
-        <section class="card profile">
-            <img src="foto.jpg" alt="Foto Profil">
-            <div class="biodata">
-                <h2>Biodata</h2>
-                <p><strong>Nama:</strong> Nama Anda</p>
-                <p><strong>Tempat, Tgl Lahir:</strong> Kota, 01 Januari 2000</p>
-                <p><strong>Alamat:</strong> Indonesia</p>
-                <p><strong>Email:</strong> email@example.com</p>
-            </div>
-        </section>
+    <section>
+        <h2>Riwayat Sekolah</h2>
+        <ul>
+            <li>SD Negeri 01 Jakarta</li>
+            <li>SMP Negeri 02 Jakarta</li>
+            <li>SMA Negeri 03 Jakarta</li>
+            <li>Universitas Contoh Indonesia</li>
+        </ul>
+    </section>
 
-        <!-- RIWAYAT SEKOLAH -->
-        <section class="card">
-            <h2>Riwayat Sekolah</h2>
-            <ul>
-                <li>SD Negeri Contoh (2006 - 2012)</li>
-                <li>SMP Negeri Contoh (2012 - 2015)</li>
-                <li>SMA/SMK Contoh (2015 - 2018)</li>
-                <li>Perguruan Tinggi (2018 - Sekarang)</li>
-            </ul>
-        </section>
+    <section>
+        <h2>Skill</h2>
+        <ul class="skill">
+            <li>HTML & CSS</li>
+            <li>Microsoft Office</li>
+            <li>Public Speaking</li>
+            <li>Desain Grafis</li>
+        </ul>
+    </section>
 
-        <!-- KEMAMPUAN -->
-        <section class="card">
-            <h2>Kemampuan</h2>
-            <div class="skills">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Microsoft Office</span>
-                <span>Desain Grafis</span>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <p>© 2026 Portofolio Saya</p>
+    <footer>
+        © 2026 Portofolio Sandi
     </footer>
+</div>
 
 </body>
 </html>
-
-
